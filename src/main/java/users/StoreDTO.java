@@ -1,8 +1,6 @@
 package users;
 
-import java.io.Serializable;
-
-public class StoreDTO extends UserDTO implements Serializable {
+public class StoreDTO extends UserDTO {
     private String url;
     private String phoneNumber;
     private String address;

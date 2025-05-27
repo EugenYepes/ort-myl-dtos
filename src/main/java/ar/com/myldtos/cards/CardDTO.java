@@ -1,10 +1,10 @@
 package ar.com.myldtos.cards;
 
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collection;
 
-import java.io.Serializable;
-import java.util.*;
-
-public class CardDTO extends CardPropertiesDTO implements Serializable {
+public class CardDTO extends CardPropertiesDTO {
     private String imageUrl;
     private String description;
     private Integer cost;

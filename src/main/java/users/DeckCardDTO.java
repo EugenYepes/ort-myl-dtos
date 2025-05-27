@@ -2,7 +2,9 @@ package users;
 
 import ar.com.myldtos.cards.CardDTO;
 
-public class DeckCardDTO {
+import java.io.Serializable;
+
+public class DeckCardDTO implements Serializable {
     private CardDTO card;
     private Integer quantity;
 
