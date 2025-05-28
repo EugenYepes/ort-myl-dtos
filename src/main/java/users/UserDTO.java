@@ -1,18 +1,17 @@
 package users;
 
 import java.io.Serializable;
-import java.util.UUID;
 
 public abstract class UserDTO implements Serializable {
-    private UUID uuid;
+    private String uuid;
     private String email;
     private String name;
 
-    public UUID getUuid() {
+    public String getUuid() {
         return uuid;
     }
 
-    public void setUuid(UUID uuid) {
+    public void setUuid(String uuid) {
         this.uuid = uuid;
     }
 
