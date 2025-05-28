@@ -1,6 +1,8 @@
 package ar.com.myldtos.cards;
 
-public class CardPropertiesDTO {
+import java.io.Serializable;
+
+public class CardPropertiesDTO implements Serializable {
     private Integer id;
     private String name;
 

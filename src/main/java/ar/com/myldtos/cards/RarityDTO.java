@@ -1,6 +1,4 @@
 package ar.com.myldtos.cards;
 
-import java.io.Serializable;
-
-public class RarityDTO extends CardPropertiesDTO implements Serializable {
+public class RarityDTO extends CardPropertiesDTO {
 }
