@@ -1,4 +1,4 @@
-package users;
+package ar.com.myldtos.users;
 
 import java.io.Serializable;
 import java.util.Set;
