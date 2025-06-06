@@ -2,7 +2,7 @@ package users;
 
 import java.io.Serializable;
 
-public abstract class UserDTO implements Serializable {
+public class UserDTO implements Serializable {
     private String uuid;
     private String email;
     private String name;
