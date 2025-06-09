@@ -1,13 +1,14 @@
 package ar.com.myldtos.users;
 
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Set;
 
 public class DeckDTO implements Serializable {
     private Integer id;
     private String name;
-    private PlayerDTO player;
-    private Set<DeckCardDTO> cards;
+    private String description;
+    private Set<DeckCardDTO> cards = new HashSet<>();
 
     public Integer getId() {
         return id;
@@ -25,12 +26,12 @@ public class DeckDTO implements Serializable {
         this.name = name;
     }
 
-    public PlayerDTO getPlayer() {
-        return player;
+    public String getDescription() {
+        return description;
     }
 
-    public void setPlayer(PlayerDTO player) {
-        this.player = player;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Set<DeckCardDTO> getCards() {
