@@ -80,6 +80,10 @@ public class CardDTO extends CardPropertiesDTO {
         this.race = race;
     }
 
+    public List<FormatDTO> getFormats() {
+        return formats;
+    }
+
     public FormatDTO getFormatByIndex(int index) {
         return formats.get(index);
     }
@@ -99,6 +103,10 @@ public class CardDTO extends CardPropertiesDTO {
 
     public void addFormat(FormatDTO format) {
         this.formats.add(format);
+    }
+
+    public List<KeyWordDTO> getKeyWords() {
+        return keyWords;
     }
 
     public KeyWordDTO getKeyWordByIndex(int index) {
