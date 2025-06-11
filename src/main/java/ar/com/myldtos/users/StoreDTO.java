@@ -1,4 +1,4 @@
-package users;
+package ar.com.myldtos.users;
 
 public class StoreDTO extends UserDTO {
     private String url;
