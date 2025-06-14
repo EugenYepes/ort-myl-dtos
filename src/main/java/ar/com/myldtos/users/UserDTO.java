@@ -10,7 +10,6 @@ public class UserDTO implements Serializable {
     public String getUuid() {
         return uuid;
     }
-
     public void setUuid(String uuid) {
         this.uuid = uuid;
     }
