@@ -2,7 +2,7 @@ package ar.com.myldtos.users;
 
 public class DeleteCardFromDecksDTO {
     private Integer deckId;
-    private Integer amount;
+    private Integer quantity;
 
     public Integer getDeckId() {
         return deckId;
@@ -12,11 +12,11 @@ public class DeleteCardFromDecksDTO {
         this.deckId = deckId;
     }
 
-    public Integer getAmount() {
-        return amount;
+    public Integer getQuantity() {
+        return quantity;
     }
 
-    public void setAmount(Integer amount) {
-        this.amount = amount;
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 }
