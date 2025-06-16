@@ -3,8 +3,17 @@ package ar.com.myldtos.users;
 import java.util.Set;
 
 public class PlayerDTO extends UserDTO {
+    private boolean isAdmin = false;
     private Set<DeckDTO> decks;
     private Set<PlayerCardDTO> cards;
+
+    public boolean isAdmin() {
+        return isAdmin;
+    }
+
+    public void setAdmin(boolean admin) {
+        isAdmin = admin;
+    }
 
     public Set<DeckDTO> getDecks() {
         return decks;
