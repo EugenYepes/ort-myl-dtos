@@ -1,10 +1,10 @@
 package ar.com.myldtos.cards;
 
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collection;
 
-import java.io.Serializable;
-import java.util.*;
-
-public class CardDTO extends CardPropertiesDTO implements Serializable {
+public class CardDTO extends CardPropertiesDTO {
     private String imageUrl;
     private String description;
     private Integer cost;
@@ -80,6 +80,10 @@ public class CardDTO extends CardPropertiesDTO implements Serializable {
         this.race = race;
     }
 
+    public List<FormatDTO> getFormats() {
+        return formats;
+    }
+
     public FormatDTO getFormatByIndex(int index) {
         return formats.get(index);
     }
@@ -99,6 +103,10 @@ public class CardDTO extends CardPropertiesDTO implements Serializable {
 
     public void addFormat(FormatDTO format) {
         this.formats.add(format);
+    }
+
+    public List<KeyWordDTO> getKeyWords() {
+        return keyWords;
     }
 
     public KeyWordDTO getKeyWordByIndex(int index) {

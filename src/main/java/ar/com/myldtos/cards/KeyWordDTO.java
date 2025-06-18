@@ -1,8 +1,6 @@
 package ar.com.myldtos.cards;
 
-import java.io.Serializable;
-
-public class KeyWordDTO extends CardPropertiesDTO implements Serializable {
+public class KeyWordDTO extends CardPropertiesDTO {
     private String definition;
 
     public String getDefinition() {
